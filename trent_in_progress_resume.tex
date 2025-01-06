@@ -49,9 +49,9 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -77,14 +77,22 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% from anish!
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -95,7 +103,8 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://www.trentwiles.com/?utm_source=resume}{\Large Trent Wiles}} & Email:\href{mailto:wiles.t@northeastern.edu}{ wiles.t@northeastern.edu}\\
-  \href{https://www.trentwiles.com/?utm_source=resume}{www.trentwiles.com} \\
+  \href{https://www.trentwiles.com/?utm_source=resume}{\underline{www.trentwiles.com}} \\
+  {Available from July-December 2025 at Boston, Connecticut, New York}
 \end{tabular*}
 
 
@@ -104,90 +113,172 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Northeastern University}{Boston, MA}
-      {Candidate for B.S. in Computer Science and Criminal Justice}{August 2023 -- April 2027 (expected)}
+      {Candidate for B.S. in Computer Science and Criminal Justice}{August 2023 -- Present}
 	\small
 		\begin{itemize}
-		    \item {Dean's List for all semesters}
-		    \item {Clubs \&\ Organizations: ACM Chapter, Content Club}
-		\end{itemize}
+		    \item {Dean's List for all semesters; expected graduation: May 2027}
+		    \item {Clubs \& Organizations: ACM Chapter, Content Club}
+        \item{Relevent Coursework: Object-Oriented Design, Database Design, Advanced Software Development, Software Engineering, Algorithms \& Data,  Introduction to Math Reasoning, Discrete Math}
+      \end{itemize}
 	\normalsize
+
   \resumeSubHeadingListEnd
 
 
-%-----------Relevent Coursework-----------------
-\section{Relevent Coursework}
-	  \resumeSubHeadingListStart
-	 \resumeSubItem{CS3500}
-	      {Object-Oriented Design}
-	\resumeSubItem{CS3200}
-	      {Database Design}
-	 \resumeSubItem{CS3000}
-	      {Algorithms \& Data}
-	\resumeSubItem{CS2500 \& CS2510}
-	      {Fundamentals of Computer Science 1 \& 2}
-	 \resumeSubItem{MATH1310}
-	      {Introduction to Math Reasoning}
-\resumeSubHeadingListEnd
-% eventually add the austrailia software class
+% %-----------Relevent Coursework-----------------
+% \section{Relevent Coursework}
+% 	  \resumeSubHeadingListStart
+% 	 \resumeSubItem{CS3500}
+% 	      {Object-Oriented Design}
+% 	\resumeSubItem{CS3200}
+% 	      {Database Design}
+% 	 \resumeSubItem{CS3000}
+% 	      {Algorithms \& Data}
+% 	\resumeSubItem{CS2500 \& CS2510}
+% 	      {Fundamentals of Computer Science 1 \& 2}
+% 	 \resumeSubItem{MATH1310}
+% 	      {Introduction to Math Reasoning}
+% \resumeSubHeadingListEnd
+% % eventually add the austrailia software class
 
 
-%-----------Technical Skills-----------------
-\section{Technical Skills}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Languages}
-      {Java, Python, Javascript, PHP, HTML/CSS, Kotlin}
-\resumeSubItem{Databases}
-      {MySQL, SQLite, MongoDB}
-\resumeSubItem{Frameworks}
-      {Node.js, Flask, WSGI, JUnit, Jest, JQuery}
-\resumeSubItem{Server Software}
-      {Caddy, Apache2, Nginx}
-    \resumeSubItem{Developer Tools}
-      {VS Code, Bash, Linux, IntelliJ IDEA, Docker, Notion}
-  \resumeSubHeadingListEnd
+% %-----------Technical Skills-----------------
+% \section{Technical Skills}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{Languages}
+%       {Java, Python, Javascript, HTML/CSS, PHP, C, Kotlin, Rust, Go}
+% \resumeSubItem{Databases}
+%       {MySQL, PostgreSQL, SQLite, MongoDB, Redis}
+% \resumeSubItem{Frameworks}
+%       {Node.js, Flask, WSGI, JUnit, Jest, JQuery}
+% \resumeSubItem{Infrastructure}
+%       {Caddy, Apache2, Nginx, VS Code, Bash, Linux, IntelliJ IDEA, Docker, Notion}
+%   \resumeSubHeadingListEnd
 
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Trace TL;DR}
-      {Summarizes Northeastern's TRACE professor evaluations using MongoDB and Google's Gemini AI}
-      \begin{itemize}
-        \item Utilized Beautiful Soup to scrape survey results from TRACE website while authenticated
-        \item Stored extracted data in MongoDB
-        \item Created frontend to display data; parsed data from Google's Gemini API
-        \item Implemented temporary server-side caching with Varnish
-      \end{itemize}
- \resumeSubItem{Sit Down And Study}
-      {Sharpens programming abilities with AI-generated, LeetCode-style questions and code execution }
-      \begin{itemize}
-        \item Collaborated with teammate at YaleHacks 2024
-        \item Utilized prompt engineering to generate tailored programming problems with OpenAI's API
-        \item Developed user-friendly frontend with ReactJS
-        \item Evaluated code solutions with Judge
-      \end{itemize}
-    \resumeSubItem{Node News}
-      {Streamlined newsletter mailer with intuitive user interface and administrator panel}
-      \begin{itemize}
-        \item Wrote an administrator panel to manage subscribers and send mail in Node.js
-        \item Leveraged a Javascript library with a remote SMTP server to automate mail delivery
-        \item Retained subscriber details in a SQLite database
-      \end{itemize}
-    \resumeSubItem{BART API}
-      {Unofficial API for Bay Area Rapid Transit }
-      \begin{itemize}
-        \item Leveraged Beautiful Soup to parse DOM
-        \item Extracted train times, station information, and alerts
-        \item Displayed extracted information in JSON format
-      \end{itemize}
+  \section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    \textbf{Languages}{:  Java, Python, Javascript, TypeScript, HTML/CSS, PHP, C, Kotlin, Rust, Go} \\
+    \textbf{Frameworks}{: Node.js, Flask, ExpressJS, React, WSGI, JUnit, Jest, JQuery} \\
+    \textbf{Databases}{: MySQL, PostgreSQL, SQLite, MongoDB, Redis} \\
+    \textbf{Developer Tools}{: Git, GitHub, Bash, Linux, Notion, LaTex} \\
+    \textbf{Infrastructure}{: Caddy, Apache2, Nginx, Docker, Netlify, Varnish Cache, DigitalOcean}
+    }}
+\end{itemize}
+
+% \section{Projects}
+%   \resumeSubHeadingListStart
+    
+%     \resumeSubItem{Trace TL;DR}
+%       { | Summarizes Northeastern's TRACE professor evaluations using MongoDB and Google's Gemini AI}
+%       \begin{itemize}
+%         \item Utilized Beautiful Soup to scrape survey results from TRACE website while authenticated
+%         \item Stored extracted data in MongoDB
+%         \item Created frontend to display data; parsed data from Google's Gemini API
+%         \item Implemented temporary server-side caching with Varnish
+%       \end{itemize}
+%  \resumeSubItem{Sit Down And Study}
+%       {Sharpens programming abilities with AI-generated, LeetCode-style questions and code execution }
+%       \begin{itemize}
+%         \item Collaborated with teammate at YaleHacks 2024
+%         \item Utilized prompt engineering to generate tailored programming problems with OpenAI's API
+%         \item Developed user-friendly frontend with ReactJS
+%         \item Evaluated code solutions with Judge
+%       \end{itemize}
+%     \resumeSubItem{Node News}
+%       {Streamlined newsletter mailer with intuitive user interface and administrator panel}
+%       \begin{itemize}
+%         \item Wrote an administrator panel to manage subscribers and send mail in Node.js
+%         \item Leveraged a Javascript library with a remote SMTP server to automate mail delivery
+%         \item Retained subscriber details in a SQLite database
+%       \end{itemize}
+%     \resumeSubItem{BART API}
+%       {Unofficial API for Bay Area Rapid Transit }
+%       \begin{itemize}
+%         \item Leveraged Beautiful Soup to parse DOM
+%         \item Extracted train times, station information, and alerts
+%         \item Displayed extracted information in JSON format
+%       \end{itemize}
   
-    \resumeSubItem{Calculus Final}
-      {Visualize integrals compared with Riemann sums and midpoint rule  }
-      \begin{itemize}
-        \item Implemented a JQuery slider to adjust numerical input
-        \item Represented mathematical expressions with LaTex
-        \item Employed Python's integrate library to calculate sums and integrals
-        \item Displayed data and calculated integrals via a Python Flask-powered API
-      \end{itemize}
+%     \resumeSubItem{Calculus Final}
+%       {Visualize integrals compared with Riemann sums and midpoint rule  }
+%       \begin{itemize}
+%         \item Implemented a JQuery slider to adjust numerical input
+%         \item Represented mathematical expressions with LaTex
+%         \item Employed Python's integrate library to calculate sums and integrals
+%         \item Displayed data and calculated integrals via a Python Flask-powered API
+%       \end{itemize}
+%   \resumeSubHeadingListEnd
+
+  \section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://github.com/trentwiles/SitDownAndStudy}{\textbf{Sit Down And Study}} $|$ \emph{Python, React, Google Gemini}}{August 2024}
+      \resumeItemListStart
+        \resumeItem{Created a learning platform, allowing users to solve AI-generated, LeetCode-style coding problems, run their solutions online, and receive instant feedback}
+        \resumeItem{Developed a backend combining Express.js, Judge0, and MongoDB that developed concept explainations and sample questions}
+      \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\href{https://github.com/trentwiles/flag}{\textbf{Flag}} $|$ \emph{PHP, MySQL, Apache Server}}{December 2020}
+        \resumeItemListStart
+          \resumeItem{Developed a basic }
+          \resumeItem{Implemented complex filtering mechanisms and search functionality using PixiJS for exploring the map}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://easyclassplanner.com}{\textbf{EasyClassPlanner}} $|$ \emph{Rust, TypeScript, React}}{May 2024}
+      \resumeItemListStart
+        \resumeItem{Created a web application utilizing Recursive Backtracking on a Rust backend to generate optimal schedules}
+        \resumeItem{Implemented UI features like a calendar view for visual assistance in choosing the perfect schedule}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://github.com/anish-sahoo/XDevChallenge}{\textbf{X Finance (X Developer Challenge)}} $|$ \emph{Python, TypeScript, React, X API, xAI API}}{April 2024}
+      \resumeItemListStart
+        % \resumeItem{Engineered a web application that uses historical Tweet data and xAI’s Grok-1 LLM to analyze public sentiment about stocks on X}
+        \resumeItem{Collaborated with 3 teammates to engineer a web application that uses historical Tweet data and xAI's Grok-1 LLM to analyze public sentiment about stocks on X}
+        \resumeItem{Scraped about 5000 tweets per query containing 1 of 10 AI-generated hashtags related to a stock}
+      \resumeItemListEnd
+
+    % \resumeProjectHeading
+    %   {\textbf{Nearby Prices} $|$ \emph{React.js, JavaScript, Tailwind CSS, Express.js, SQLite}}{March 2024}
+    %   \resumeItemListStart
+    %     \resumeItem{Built a crowd-sourced price aggregator for small businesses where users can add and update prices}
+    %     \resumeItem{Created as an academic project (CS 3200) first with SQLite, then migrated to MongoDB and Redis}
+    %   \resumeItemListEnd
+      
+    % \resumeProjectHeading
+    %   {\textbf{Portfolio Website} $|$ \emph{JavaScript, Gatsby.js, Tailwind CSS}}{December 2023}
+    %   \resumeItemListStart
+    %     \resumeItem{Designed and implemented a simple website to showcase projects, achievements, and resume}
+    %   \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://github.com/anish-sahoo/khouryktrl}{\textbf{KhouryKTRL}} $|$ \emph{JavaScript, VSCode API}}{October 2023}
+      \resumeItemListStart
+        \resumeItem{VSCode extension that helps CS2500 (Fundamentals of CS 1) students save time in code execution/linting}
+        \resumeItem{Endorsed by 2 professors and used by over 100 students on the Northeastern Oakland Campus}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://play.google.com/store/apps/details?id=com.anish.expirydatereminder}{\textbf{Expiry Date Reminder}} $|$ \emph{Java, SQLite, Android SDK, Android Studio}}{August 2022}
+      \resumeItemListStart
+        \resumeItem{Developed an Android application that stores expiration dates and reminds the user if something is expiring soon}
+        \resumeItem{Amassed over 4,500 downloads and a 4.5/5 star rating on the Google Play Store}
+      \resumeItemListEnd
+
+    % \resumeProjectHeading{\textbf{Other Projects} $|$ \emph{Java, Python, Kotlin, Rust, C++}}{}
+    %   \resumeItemListStart
+    %     \resumeItem{WebSocket Line System, AI Resume Parser, Password Manager, Wordle Clone, Text Processing Discord Bot}
+    %   \resumeItemListEnd
+    
+    
   \resumeSubHeadingListEnd
+
+  % throw some more older projects here
+  % more stars is better
+  % dig through github
 
 
 %--------Interests------------
