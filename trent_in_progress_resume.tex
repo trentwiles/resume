@@ -42,7 +42,10 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  % changed the vspace from -5 to -8 to ensure that experiences
+  % text could fit in
+  % consider changing later
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
 
 % Ensure that generate PDF is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -113,12 +116,12 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Northeastern University | Khoury College of Computer Sciences}{Boston, MA}
-      {Candidate for B.S. in Computer Science and Criminal Justice}{August 2023 | Present}
+      {Candidate for Bachelor of Science in Computer Science and Criminal Justice}{August 2023 | Present}
 	\small
 		\begin{itemize}
-		    \item {GPA: 3.69/4; Dean's List for all semesters; expected graduation: May 2027}
+		    \item {GPA: 3.7/4.0; Dean's List for all semesters; expected graduation: May 2027}
 		    \item {Clubs \& Organizations: ACM Chapter, Content Club}
-        \item{Relevent Coursework: Object-Oriented Design, Database Design, Advanced Software Development, Software Engineering, Algorithms \& Data,  Introduction to Math Reasoning, Discrete Math}
+        \item{Relevant Coursework: Object-Oriented Design, Database Design, Advanced Software Development, Software Engineering, Algorithms \& Data,  Introduction to Math Reasoning, Discrete Math}
       \end{itemize}
 	\normalsize
 
@@ -150,38 +153,40 @@
       \resumeProjectHeading
         {\href{https://github.com/trentwiles/flag}{\textbf{Flag}} $|$ \emph{PHP, MySQL, Apache Server}}{December 2020}
         \resumeItemListStart
-          \resumeItem{Developed a robust video sharing platform that allowed users to upload, watch, and rate videos}
+          \resumeItem{Engineered a robust video sharing platform that allowed users to upload, watch, and rate videos}
           \resumeItem{Employed MySQL to store video information and user metadata; used PHP to render webpages}
+          \resumeItem{Hosted 240 videos and 100 unique users at peak}
         \resumeItemListEnd
 
     \resumeProjectHeading
       {\href{https://trace.trentwiles.com/}{\textbf{Trace TL;DR}} $|$ \emph{Python, Flask, MongoDB}}{November 2024}
       \resumeItemListStart
-        \resumeItem{Scraped hundreds of teacher evaluations from Northeastern's TRACE platform daily and aggregated them in a MongoDB database}
+        \resumeItem{Aggregated hundreds of teacher evaluations from Northeastern's TRACE platform daily into a MongoDB database}
         \resumeItem{Designed a high performance platform to drastically speed up data access rates, utilizing an LLM to summarize key positive and negative characteristics of professors}
+        \resumeItem{Analytics reported over 150 unique visitors per day, at peak}
       \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\href{https://github.com/trentwiles/nodenews}{\textbf{Node News}} $|$ \emph{Javascript, SMTP, Flask}}{August 2024}
-      \resumeItemListStart
-        \resumeItem{Engineered a user interface allowing users to subscribe to a newsletter, and allowing administrators to manage subscribers and newsletters}
-        \resumeItem{Implemented a system to send scheduled communications to all subscribed users, with a focus on engagement}
-      \resumeItemListEnd
+    % \resumeProjectHeading
+    %   {\href{https://github.com/trentwiles/nodenews}{\textbf{Node News}} $|$ \emph{Javascript, SMTP, Flask}}{August 2024}
+    %   \resumeItemListStart
+    %     \resumeItem{Engineered a user interface allowing users to subscribe to a newsletter, and allowing administrators to manage subscribers and newsletters}
+    %     \resumeItem{Implemented a system to send scheduled communications to all subscribed users, with a focus on engagement}
+    %   \resumeItemListEnd
 
     \resumeProjectHeading
       {\href{https://integral.trentwil.es/}{\textbf{Calculus Final}} $|$ \emph{JavaScript, LaTeX, Python, JQuery}}{May 2023}
       \resumeItemListStart
-        \resumeItem{Developed an interface that allows users to compare the accuracy of intergral approximations to the actual integral calculation}
-        \resumeItem{Used JQuery to develop client-side logic and used LaTeX to display equations}
-        \resumeItem{Worked with Python Flask to calculate integrals and approximations via an API}
+        \resumeItem{Devised an interface that allows users to compare the accuracy of intergral approximations to the actual integral calculation}
+        \resumeItem{Implemented JQuery to develop client-side logic, LaTeX to display equations, and calculated integrals via a Python Flask API}
+        % \resumeItem{Worked with Python Flask to calculate integrals and approximations via an API}
       \resumeItemListEnd
 
     \resumeProjectHeading
       {\href{https://api-sle.trentwil.es/}{\textbf{Shore Line East API}} $|$ \emph{Python, Beautiful Soup, Flask, Varnish Cache}}{October 2023}
       \resumeItemListStart
-        \resumeItem{Developed an thorough unofficial RESTful API for Connecticut's commuter rail system using Beautiful Soup to scrape data}
-        \resumeItem{Retrives and displays train arrival times, station metadata, and fares in JSON format}
-        \resumeItem{Utilized Varnish Cache to temporary cache frequently retrieved data on the server side to speed up request times}
+        \resumeItem{Crafted an thorough unofficial RESTful API for Connecticut's commuter rail system using Beautiful Soup to scrape data}
+        \resumeItem{Retrives and displays train arrival times, station metadata, and fares in JSON format; cached data with Varnish Cache to speed up request times}
+        % \resumeItem{Utilized Varnish Cache to temporary cache frequently retrieved data on the server side to speed up request times}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -190,12 +195,29 @@
   % more stars is better
   % dig through github
 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Guilford Racquet and Swim Club}{May 2021 -- August 2023}
+    {Junior Tennis Pro}{}
+    \resumeItemListStart
+    
+
+
+
+      \resumeItem{Delivered quality tennis coaching to children ages 4-15 and ran private lessons}
+      \resumeItem{Addressed parent questions and concerns; tailored lessons to reflect conversations}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %--------Interests------------
 \section{Interests}
   \resumeSubHeadingListStart
     \item{
-      {Cycling, traveling, video editing, tennis, kayaking}
+      {Cycling, Traveling, Video Editing, Tennis, Kayaking}
       \hfill
     }
   \resumeSubHeadingListEnd
