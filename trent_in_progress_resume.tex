@@ -45,7 +45,7 @@
   % changed the vspace from -5 to -8 to ensure that experiences
   % text could fit in
   % consider changing later
-}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-8.5pt}]
 
 % Ensure that generate PDF is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -105,10 +105,16 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://trentwil.es/?utm_source=resume}{\Large Trent Wiles}} & Email:\href{mailto:wiles.t@northeastern.edu}{ wiles.t@northeastern.edu}\\ & Phone:\href{tel:6177065565}{ (617) 706-5565}\\
+  \textbf{\href{https://trentwil.es/?utm_source=resume}{\Large Trent Wiles}} 
+  \vspace{1.3pt}
+  \\
+  {Available from July-December 2025 in Boston, New York, and San Francisco} \\
+
+  Email:\href{mailto:wiles.t@northeastern.edu}{ wiles.t@northeastern.edu} & \\
+  Phone:\href{tel:6177065565}{ (617) 706-5565} & \\
   \href{https://trentwil.es/?utm_source=resume}{\underline{trentwil.es}} $|$ \href{https://github.com/trentwiles}{\underline{github.com/trentwiles}} $|$ \href{https://www.linkedin.com/in/trentwiles/}{\underline{linkedin.com/in/trentwiles}} \\
-  {Available from July-December 2025 in Boston, New York, and San Fransisco}
 \end{tabular*}
+
 
 
 %-----------EDUCATION-----------------
@@ -142,12 +148,38 @@
 
   \section{Projects}
   \resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\href{https://trace.trentwiles.com/}{\textbf{Trace TL;DR}} $|$ \emph{Python, Flask, MongoDB}}{November 2024}
+      \resumeItemListStart
+        \resumeItem{Aggregated hundreds of teacher evaluations from Northeastern's TRACE platform daily into a MongoDB database}
+        \resumeItem{Designed a high performance platform to drastically speed up data access rates, utilizing an LLM to summarize key positive and negative characteristics of professors}
+        \resumeItem{Analytics reported over 150 unique visitors per day, at peak}
+      \resumeItemListEnd
+
+
+      
     \resumeProjectHeading
       {\href{https://github.com/trentwiles/SitDownAndStudy}{\textbf{Sit Down And Study}} $|$ \emph{Javascript, Python, React, Google Gemini}}{October 2024}
       \resumeItemListStart
       % mention working with anish ("the team") on this project
         \resumeItem{Created a learning platform, allowing users to solve AI-generated, LeetCode-style coding problems, run their solutions online, and receive instant feedback}
         \resumeItem{Developed a backend combining Express.js, Judge0, and MongoDB that crafted concept explainations and sample questions to challenge a user's understanding}
+      \resumeItemListEnd
+
+      \resumeProjectHeading
+      {\href{https://api-sle.trentwil.es/}{\textbf{Shore Line East API}} $|$ \emph{Python, Beautiful Soup, Flask, Varnish Cache}}{October 2023}
+      \resumeItemListStart
+        \resumeItem{Crafted an thorough unofficial RESTful API for Connecticut's commuter rail system using Beautiful Soup to scrape data}
+        \resumeItem{Retrives and displays train arrival times, station metadata, and fares in JSON format; cached data with Varnish Cache to speed up request times}
+        % \resumeItem{Utilized Varnish Cache to temporary cache frequently retrieved data on the server side to speed up request times}
+      \resumeItemListEnd
+
+      \resumeProjectHeading
+      {\href{https://integral.trentwil.es/}{\textbf{Calculus Final}} $|$ \emph{JavaScript, LaTeX, Python, JQuery}}{May 2023}
+      \resumeItemListStart
+        \resumeItem{Devised an interface that allows users to compare the accuracy of intergral approximations to the actual integral calculation}
+        \resumeItem{Implemented JQuery to develop client-side logic, LaTeX to display equations, and calculated integrals via a Python Flask API}
+        % \resumeItem{Worked with Python Flask to calculate integrals and approximations via an API}
       \resumeItemListEnd
 
       \resumeProjectHeading
@@ -158,13 +190,7 @@
           \resumeItem{Hosted 240 videos and 100 unique users at peak}
         \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\href{https://trace.trentwiles.com/}{\textbf{Trace TL;DR}} $|$ \emph{Python, Flask, MongoDB}}{November 2024}
-      \resumeItemListStart
-        \resumeItem{Aggregated hundreds of teacher evaluations from Northeastern's TRACE platform daily into a MongoDB database}
-        \resumeItem{Designed a high performance platform to drastically speed up data access rates, utilizing an LLM to summarize key positive and negative characteristics of professors}
-        \resumeItem{Analytics reported over 150 unique visitors per day, at peak}
-      \resumeItemListEnd
+    
 
     % \resumeProjectHeading
     %   {\href{https://github.com/trentwiles/nodenews}{\textbf{Node News}} $|$ \emph{Javascript, SMTP, Flask}}{August 2024}
@@ -173,21 +199,9 @@
     %     \resumeItem{Implemented a system to send scheduled communications to all subscribed users, with a focus on engagement}
     %   \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\href{https://integral.trentwil.es/}{\textbf{Calculus Final}} $|$ \emph{JavaScript, LaTeX, Python, JQuery}}{May 2023}
-      \resumeItemListStart
-        \resumeItem{Devised an interface that allows users to compare the accuracy of intergral approximations to the actual integral calculation}
-        \resumeItem{Implemented JQuery to develop client-side logic, LaTeX to display equations, and calculated integrals via a Python Flask API}
-        % \resumeItem{Worked with Python Flask to calculate integrals and approximations via an API}
-      \resumeItemListEnd
+    
 
-    \resumeProjectHeading
-      {\href{https://api-sle.trentwil.es/}{\textbf{Shore Line East API}} $|$ \emph{Python, Beautiful Soup, Flask, Varnish Cache}}{October 2023}
-      \resumeItemListStart
-        \resumeItem{Crafted an thorough unofficial RESTful API for Connecticut's commuter rail system using Beautiful Soup to scrape data}
-        \resumeItem{Retrives and displays train arrival times, station metadata, and fares in JSON format; cached data with Varnish Cache to speed up request times}
-        % \resumeItem{Utilized Varnish Cache to temporary cache frequently retrieved data on the server side to speed up request times}
-      \resumeItemListEnd
+    
 
   \resumeSubHeadingListEnd
 
