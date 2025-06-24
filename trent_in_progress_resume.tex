@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10.8pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -108,7 +108,7 @@
   \textbf{\href{https://trentwil.es/?utm_source=resume}{\Large Trent Wiles}} 
   \vspace{1.3pt}
   \\
-  {Available from July-December 2025 in Boston, New York, and San Francisco} \\
+  {Available from January-June 2026 in Boston, New York, and San Francisco} \\
 
   Email:\href{mailto:wiles.t@northeastern.edu}{ wiles.t@northeastern.edu} & \\
   Phone:\href{tel:6177065565}{ (617) 706-5565} & \\
@@ -119,19 +119,16 @@
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Northeastern University | Khoury College of Computer Sciences}{Boston, MA}
-      {Candidate for Bachelor of Science in Computer Science and Criminal Justice}{August 2023 | Present}
-	\small
-		\begin{itemize}
-		    \item {GPA: 3.7/4.0; Dean's List for all semesters; expected graduation: May 2027}
-		    \item {Clubs \& Organizations: ACM Chapter, Content Club}
-        \item{Relevant Coursework: Object-Oriented Design, Database Design, Advanced Software Development, Software Engineering, Algorithms \& Data,  Introduction to Math Reasoning, Discrete Math}
-      \end{itemize}
-	\normalsize
-
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Northeastern University, Khoury College of Computer Sciences}{Boston, MA}
+    {B.S. in Computer Science and Criminal Justice \hfill GPA: 3.7/4.0}{Aug 2023 - May 2027 (Expected)}
+  \vspace{2pt}  % spacing between GPA line and bullets
+    \begin{itemize}[noitemsep, topsep=0pt]
+      \item Dean's List every semester; ACM Chapter, Content Club
+      \item Relevant Coursework: Object-Oriented Design, Database Design, Software Engineering, Algorithms \& Data, Math Reasoning, Discrete Math
+    \end{itemize}
+\resumeSubHeadingListEnd
 
 
   \section{Technical Skills}
@@ -167,11 +164,11 @@
       \resumeItemListEnd
 
       \resumeProjectHeading
-      {\href{https://api-sle.trentwil.es/}{\textbf{Shore Line East API}} $|$ \emph{Python, Beautiful Soup, Flask, Varnish Cache}}{October 2023}
+      {\href{https://github.com/Camille-Ferrell/rag-project/tree/basic-rag}{\textbf{RAG Pipeline Metrics}} $|$ \emph{Python, gRPC, PostgreSQL, Clickhouse, Cassandra, OpenSearch}}{June 2025}
       \resumeItemListStart
-        \resumeItem{Crafted an thorough unofficial RESTful API for Connecticut's commuter rail system using Beautiful Soup to scrape data}
-        \resumeItem{Retrives and displays train arrival times, station metadata, and fares in JSON format; cached data with Varnish Cache to speed up request times}
-        % \resumeItem{Utilized Varnish Cache to temporary cache frequently retrieved data on the server side to speed up request times}
+        \resumeItem{Partnered with NetApp Instaclustr to build a RAG pipeline powered by Mistral 7B that benchmarked query latency across Postgres, Cassandra, OpenSearch, and ClickHouse}
+        \resumeItem{Developed Python microservices for ingestion, embedding, and storage in an Agile team environment, using gRPC for scalable and modular communication}
+        \resumeItem{Processed and embedded scientific PDFs at scale using SPECTER2, enabling high-throughput document ingestion with peak performance of 10,000 documents per hour}
       \resumeItemListEnd
 
       \resumeProjectHeading
