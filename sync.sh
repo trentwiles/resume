@@ -28,8 +28,7 @@ else
     #    available on the internet
     curl https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache \
         -H 'Content-Type: application/json' \
-        -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-        -H "X-Auth-Key: $CLOUDFLARE_API_KEY" \
+        -H "Authorization: Bearer $CLOUDFLARE_API_KEY" \
         -d "{\"files\": [\"https://www.trentwiles.com/a/$REMOTE_RESUME_NAME\"]}"
 
     echo "Purged https://www.trentwiles.com/a/$REMOTE_RESUME_NAME"
