@@ -41,11 +41,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-  % changed the vspace from -5 to -8 to ensure that experiences
-  % text could fit in
-  % consider changing later
-}{}{0em}{}[\color{black}\titlerule \vspace{-8.5pt}]
+  \vspace{-11pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Ensure that generate PDF is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -54,7 +51,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
@@ -67,11 +64,11 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -86,15 +83,15 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=4pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
 
 % from anish!
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 %-------------------------------------------
@@ -106,7 +103,7 @@
 %----------HEADING-----------------
 \begin{center}
 \textbf{\href{https://trentwil.es/?utm_source=resume}{\Large Trent Wiles}}
-\vspace{1.3pt}
+\vspace{0.5pt}
 \\
 \href{mailto:wiles.t@northeastern.edu}{wiles.t@northeastern.edu} $|$ \href{https://trentwil.es/?utm_source=resume}{\underline{trentwil.es}} $|$ \href{https://github.com/trentwiles}{\underline{github.com/trentwiles}} $|$ \href{https://www.linkedin.com/in/trentwiles/}{\underline{linkedin.com/in/trentwiles}} \\
 {Available from January-August 2026 anywhere in the United States \& Canada} \\
@@ -119,7 +116,7 @@
       {Northeastern University | Khoury College of Computer Sciences}{Boston, MA}
       {Candidate for Bachelor of Science in Computer Science and Criminal Justice}{August 2023 | Present}
 	\small
-		\begin{itemize}
+		\begin{itemize}[itemsep=-2pt]
 		    \item {GPA: 3.7/4.0; Dean's List for all semesters; expected graduation: May 2027}
 		    \item {Clubs \& Organizations: ACM Chapter, Content Club}
         \item{Relevant Coursework: Object-Oriented Programming, Database Design, Software Development, Algorithms \& Data Structures, Introduction to Math Reasoning, Discrete Math, Networking Fundamentals}
@@ -128,10 +125,8 @@
 
   \resumeSubHeadingListEnd
 
-
-
   \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt]
    \small{\item{
 \textbf{Languages}{: Java, Python, JavaScript, TypeScript, HTML/CSS, Go, C, Kotlin} \\
 \textbf{Frameworks}{: Node.js, Flask, ExpressJS, React, WSGI, JUnit, Jest, JQuery} \\
@@ -139,7 +134,6 @@
 \textbf{Tools}{: Git, GitHub, Bash, Linux, Notion, LaTeX, Docker, DigitalOcean, Caddy, Apache2, Nginx}
    }}
 \end{itemize}
-
 
   \section{Projects}
   \resumeSubHeadingListStart
@@ -165,16 +159,11 @@
     \resumeItem{Optimized document processing pipeline using SPECTER2 embeddings to achieve 10,000 documents per hour throughput, demonstrating production-grade scalability for scientific PDF ingestion}
     \resumeItemListEnd
 
-
-
-
-      \resumeProjectHeading
+    \resumeProjectHeading
       {\href{https://github.com/trentwiles/hackernews}{\textbf{HackerNews Clone}} $|$ \emph{Go, React, TypeScript, PostgreSQL, Docker}}{July 2025}
       \resumeItemListStart
       \resumeItem{Built a production-grade HackerNews clone with magic link authentication, submission/comment posting with reCAPTCHA v3 protection, and community moderation flagging, deployed via Docker and Caddy}
-
       \resumeItem{Implemented full voting and sorting systems, user customization features, and comprehensive HTTP/business logic logging to enable 2,000+ monthly active users}
-
       \resumeItem{Engineered a Go backend and React/TypeScript frontend using ShadCN components, achieving sub-100ms API response times and support for 500+ users in production}
       \resumeItemListEnd
 
@@ -182,15 +171,10 @@
  {\href{https://github.com/trentwiles/flag}{\textbf{Flag}} $|$ \emph{PHP, MySQL, Apache, Cloudflare}}{December 2020}
 \resumeItemListStart
 \resumeItem{Built a video sharing platform enabling users to upload, stream, and rate videos with a MySQL database backend and PHP server-side rendering, achieving 240+ hosted videos and 100 concurrent users}
-
 \resumeItem{Self-hosted the application on Ubuntu Linux using Apache HTTP Server on a home network while leveraging Cloudflare for video caching and content delivery, demonstrating early DevOps and infrastructure management skills}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-
-  % throw some more older projects here
-  % more stars is better
-  % dig through github
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -199,8 +183,13 @@
  {Kaleidoscope at Khoury College}{September 2025 - Present}
  {Software Engineer}{}
 \resumeItemListStart
-\resumeItem{Collaborated with the software team to manage AWS resources for Northeastern Kaleidoscope, a club council overseeing 50+ student organizations funded by Khoury College}\resumeItem{Partnered with the operations team to automate Slack notifications integrated with Google Sheets, streamlining communication across 10,000+ dollars in annual club distributions}
-\resumeItemListEnd\resumeSubheading
+\resumeItem{Collaborated with the software team to manage AWS resources for Northeastern Kaleidoscope, a club council overseeing 50+ student organizations funded by Khoury College}
+\resumeItem{Partnered with the operations team to automate Slack notifications integrated with Google Sheets, streamlining communication across 10,000+ dollars in annual club distributions}
+\resumeItemListEnd
+
+ \vspace{0.1cm}
+
+\resumeSubheading
  {Guilford Racquet and Swim Club}{May 2021 -- August 2023}
  {Junior Tennis Pro}{}
 \resumeItemListStart
@@ -208,6 +197,7 @@
 \resumeItem{Addressed parent questions and concerns; tailored lessons to reflect conversations}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
+
 
 %--------Interests------------
 \section{Interests}
@@ -217,7 +207,6 @@
       \hfill
     }
   \resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 \end{document}
