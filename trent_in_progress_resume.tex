@@ -44,23 +44,22 @@
   \vspace{-11pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
-% Ensure that generate PDF is machine readable/ATS parsable
+% PDF is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
-% Custom commands
+% custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-3pt}}
   }
 }
 
-% Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-4.5pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -74,19 +73,18 @@
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-4.5pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3.5pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=4pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
 
-% from anish!
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -103,7 +101,7 @@
 %----------HEADING-----------------
 \begin{center}
 \textbf{\href{https://trentwil.es/?utm_source=resume}{\Large Trent Wiles}}
-\vspace{0.5pt}
+\vspace{1pt}
 \\
 \href{mailto:wiles.t@northeastern.edu}{wiles.t@northeastern.edu} $|$ \href{https://trentwil.es/?utm_source=resume}{\underline{trentwil.es}} $|$ \href{https://github.com/trentwiles}{\underline{github.com/trentwiles}} $|$ \href{https://www.linkedin.com/in/trentwiles/}{\underline{linkedin.com/in/trentwiles}} \\
 {Available from January-August 2026 anywhere in the United States \& Canada} \\
@@ -116,7 +114,7 @@
       {Northeastern University | Khoury College of Computer Sciences}{Boston, MA}
       {Candidate for Bachelor of Science in Computer Science and Criminal Justice}{August 2023 | Present}
 	\small
-		\begin{itemize}[itemsep=-2pt]
+		\begin{itemize}[itemsep=-1.5pt]
 		    \item {GPA: 3.7/4.0; Dean's List for all semesters; expected graduation: May 2027}
 		    \item {Clubs \& Organizations: ACM Chapter, Content Club}
         \item{Relevant Coursework: Object-Oriented Programming, Database Design, Software Development, Algorithms \& Data Structures, Introduction to Math Reasoning, Discrete Math, Networking Fundamentals}
@@ -126,7 +124,7 @@
   \resumeSubHeadingListEnd
 
   \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt]
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2.5pt]
    \small{\item{
 \textbf{Languages}{: Java, Python, JavaScript, TypeScript, HTML/CSS, Go, C, Kotlin} \\
 \textbf{Frameworks}{: Node.js, Flask, ExpressJS, React, WSGI, JUnit, Jest, JQuery} \\
@@ -152,12 +150,12 @@
         \resumeItem{Attracted 85 unique users who collectively generated 340+ practice questions and placed among top winners}      \resumeItemListEnd
 
     \resumeProjectHeading
-    {\href{https://github.com/Camille-Ferrell/rag-project/tree/basic-rag}{\textbf{RAG Pipeline Metrics}} $|$ \emph{Python, gRPC, PostgreSQL, Clickhouse, Cassandra, OpenSearch}}{June 2025}
-    \resumeItemListStart
-    \resumeItem{Partnered with NetApp Instaclustr in a team of 8 during Northeastern's Software Engineering in Australia program to design a RAG pipeline using Mistral 7B that benchmarked query latency across four distributed database backends}
-    \resumeItem{Developed scalable Python FastAPI microservices for document ingestion, embedding generation, and Python microservices using gRPC, enabling modular inter-service communication in a fast-paced Agile environment}
-    \resumeItem{Optimized document processing pipeline using SPECTER2 embeddings to achieve 10,000 documents per hour throughput, demonstrating production-grade scalability for scientific PDF ingestion}
-    \resumeItemListEnd
+  {\href{https://github.com/Camille-Ferrell/rag-project/tree/basic-rag}{\textbf{RAG Pipeline Metrics}} $|$ \emph{Python, gRPC, PostgreSQL, Clickhouse, Cassandra, OpenSearch}}{June 2025}
+  \resumeItemListStart
+  \resumeItem{Partnered with NetApp Instaclustr in a team of 8 during Northeastern's Software Engineering in Australia program to design a RAG pipeline using Mistral 7B that benchmarked query latency across four distributed database backends}
+  \resumeItem{Developed scalable FastAPI microservices for document ingestion and embedding generation, leveraging gRPC for modular inter-service communication in a fast-paced Agile environment}
+  \resumeItem{Optimized document processing pipeline using SPECTER2 embeddings to achieve 10,000 documents per hour throughput, demonstrating production-grade scalability for scientific PDF ingestion}
+  \resumeItemListEnd
 
     \resumeProjectHeading
       {\href{https://github.com/trentwiles/hackernews}{\textbf{HackerNews Clone}} $|$ \emph{Go, React, TypeScript, PostgreSQL, Docker}}{July 2025}
@@ -187,7 +185,7 @@
 \resumeItem{Partnered with the operations team to automate Slack notifications integrated with Google Sheets, streamlining communication across 10,000+ dollars in annual club distributions}
 \resumeItemListEnd
 
- \vspace{0.1cm}
+ \vspace{0cm}
 
 \resumeSubheading
  {Guilford Racquet and Swim Club}{May 2021 -- August 2023}
@@ -201,6 +199,7 @@
 
 %--------Interests------------
 \section{Interests}
+\vspace{2pt}
   \resumeSubHeadingListStart
     \item{
       {Cycling, Traveling, Urban Exploration, Tennis, Kayaking}
