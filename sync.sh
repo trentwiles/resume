@@ -5,6 +5,12 @@ REMOTE_RESUME_NAME="ResumeTrentWiles.pdf"
 SITE_STORAGE_PATH="/var/www/html/trentwil.es/a/$REMOTE_RESUME_NAME"
 ENV_PATH=".env"
 
+# 0. Check required path exists
+if [ ! -d "/var/www/html/trentwil.es" ]; then
+    echo "Error: /var/www/html/trentwil.es does not exist. Are you on the right machine?"
+    exit 1
+fi
+
 # 0. Load .env variables
 set -o allexport
 source $ENV_PATH

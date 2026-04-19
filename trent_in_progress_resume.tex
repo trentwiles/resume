@@ -21,7 +21,7 @@
 \input{glyphtounicode}
 
 \pagestyle{fancy}
-\fancyhf{} % Clear all header and footer fields
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -104,7 +104,8 @@
 \vspace{1pt}
 \\
 \href{mailto:wiles.t@northeastern.edu}{wiles.t@northeastern.edu} $|$ \href{https://trentwil.es/?utm_source=resume}{\underline{trentwil.es}} $|$ \href{https://github.com/trentwiles}{\underline{github.com/trentwiles}} $|$ \href{https://www.linkedin.com/in/trentwiles/}{\underline{linkedin.com/in/trentwiles}} \\
-{Available from January-August 2026 anywhere in the United States \& Canada} \\
+% temporary looking for job availability header
+% {Available from January-August 2026 anywhere in the United States \& Canada} \\
 \end{center}
 
 %-----------EDUCATION-----------------
@@ -116,46 +117,70 @@
 	\small
 		\begin{itemize}[itemsep=-1.5pt]
 		    \item {GPA: 3.7/4.0; Dean's List for all semesters; expected graduation: May 2027}
-		    \item {Clubs \& Organizations: ACM Chapter, Content Club}
+		    \item {Clubs \& Organizations: ACM Chapter, Content Club, OSCRR Student Board Member}
         \item{Relevant Coursework: Object-Oriented Programming, Database Design, Software Development, Algorithms \& Data Structures, Introduction to Math Reasoning, Discrete Math, Networking Fundamentals}
       \end{itemize}
 	\normalsize
 
   \resumeSubHeadingListEnd
 
-  \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2.5pt]
-   \small{\item{
-\textbf{Languages}{: Java, Python, JavaScript, TypeScript, HTML/CSS, Go, C, Kotlin} \\
-\textbf{Frameworks}{: Node.js, Flask, ExpressJS, React, WSGI, JUnit, Jest, JQuery} \\
-\textbf{Databases}{: MySQL, PostgreSQL, SQLite, MongoDB, Redis} \\
-\textbf{Tools}{: Git, GitHub, Bash, Linux, Notion, LaTeX, Docker, DigitalOcean, Caddy, Apache2, Nginx}
-   }}
-\end{itemize}
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+ {Amazon}{June 2026 - August 2026}
+ {Loss Prevention Intern}{}
+\resumeItemListStart
+\resumeItem{Will contribute to an intern project related to loss prevention at an Amazon Fulfillment Center}
+\resumeItemListEnd
+\vspace{4pt}
+
+\resumeSubheading
+ {HITE Hedge Asset Management LLC}{January 2026 - June 2026}
+ {Software Engineer Co-op}{}
+\resumeItemListStart
+% claude generated bullets - clean these up before github sync
+\resumeItem{Built a React and TypeScript AI chatbot UI under senior supervision that gives portfolio managers natural language access to commodities and automotive data from internal S3 and Databricks sources, surfacing company metrics to support investment decisions}
+\resumeItem{Secured proprietary research from external bots and maintained regulatory compliance by enforcing Microsoft OAuth and firewall-level IP whitelisting on an EC2-hosted deployment, blocking all unauthorized outside access}
+\resumeItem{Eliminated the repetitive cycle of downloading data, editing in Excel, and re-feeding it to the model by embedding a live-syncing CSV editor with formula support directly into the chat interface}
+\resumeItemListEnd
+\vspace{4pt}
+
+\resumeSubheading
+ {Kaleidoscope at Khoury College}{September 2025 - Present}
+ {Co-President}{}
+\resumeItemListStart
+\resumeItem{Will co-lead a student organization of 10 members alongside a fellow Co-President, coordinating events and initiatives with a faculty advisor to support Khoury College's club ecosystem}
+\resumeItem{Led the software team to manage and investigate technical resources for Northeastern Kaleidoscope, a club council overseeing 50+ student organizations funded by Khoury College}
+\resumeItem{Partnered with the operations team to automate Slack notifications integrated with Notion, streamlining communication across 10,000+ dollars in annual club distributions}
+\resumeItemListEnd
+
+% \vspace{0cm}
+%
+% \resumeSubheading
+%  {Guilford Racquet and Swim Club}{May 2021 -- August 2023}
+%  {Junior Tennis Pro}{}
+% \resumeItemListStart
+% \resumeItem{Delivered quality tennis coaching to children ages 4-15 and ran private lessons}
+% \resumeItem{Addressed parent questions and concerns; tailored lessons to reflect conversations}
+% \resumeItemListEnd
+\resumeSubHeadingListEnd
 
   \section{Projects}
   \resumeSubHeadingListStart
-  \resumeProjectHeading
-      {\href{https://trace.trentwiles.com/}{\textbf{Trace TL;DR}} $|$ \emph{Python, Flask, MongoDB}}{November 2024}
-      \resumeItemListStart
-        \resumeItem{Built an automated pipeline to ingest and summarize hundreds of daily teacher evaluations using Python, BeautifulSoup, and Google's Gemini API, storing processed data in MongoDB for instant student access}
-        \resumeItem{Designed a full-stack platform that transformed hours of professor research into seconds, attracting 150+ daily active users and validating strong product-market fit}
-      \resumeItemListEnd
-      
-    \resumeProjectHeading
-      {\href{https://github.com/trentwiles/SitDownAndStudy}{\textbf{Sit Down And Study}} $|$ \emph{JavaScript, React, Google Gemini}}{October 2024}
-      \resumeItemListStart
-        \resumeItem{Collaborated with a teammate to build an interactive learning platform where users master CS concepts through AI-generated explanations, then validate understanding by solving LeetCode-style coding problems}
-        \resumeItem{Engineered a full-stack application using Express.js, React, Judge0, and MongoDB that generated personalized concept explanations via OpenAI's API and automatically validated code submissions in real-time}
-        \resumeItem{Attracted 85 unique users who collectively generated 340+ practice questions and placed among top winners}      \resumeItemListEnd
-
-    \resumeProjectHeading
-  {\href{https://github.com/Camille-Ferrell/rag-project/tree/basic-rag}{\textbf{RAG Pipeline Metrics}} $|$ \emph{Python, gRPC, PostgreSQL, Clickhouse, Cassandra, OpenSearch}}{June 2025}
-  \resumeItemListStart
-  \resumeItem{Partnered with NetApp Instaclustr in a team of 8 during Northeastern's Software Engineering in Australia program to design a RAG pipeline using Mistral 7B that benchmarked query latency across four distributed database backends}
-  \resumeItem{Developed scalable FastAPI microservices for document ingestion and embedding generation, leveraging gRPC for modular inter-service communication in a fast-paced Agile environment}
-  \resumeItem{Optimized document processing pipeline using SPECTER2 embeddings to achieve 10,000 documents per hour throughput, demonstrating production-grade scalability for scientific PDF ingestion}
-  \resumeItemListEnd
+% \resumeProjectHeading
+%       {\href{https://trace.trentwiles.com/}{\textbf{Trace TL;DR}} $|$ \emph{Python, Flask, MongoDB}}{November 2024}
+%       \resumeItemListStart
+%         \resumeItem{Built an automated pipeline to ingest and summarize hundreds of daily teacher evaluations using Python, BeautifulSoup, and Google's Gemini API, storing processed data in MongoDB for instant student access}
+%         \resumeItem{Designed a full-stack platform that transformed hours of professor research into seconds, attracting 150+ daily active users and validating strong product-market fit}
+%       \resumeItemListEnd
+%
+%     \resumeProjectHeading
+%       {\href{https://github.com/trentwiles/SitDownAndStudy}{\textbf{Sit Down And Study}} $|$ \emph{JavaScript, React, Google Gemini}}{October 2024}
+%       \resumeItemListStart
+%         \resumeItem{Collaborated with a teammate to build an interactive learning platform where users master CS concepts through AI-generated explanations, then validate understanding by solving LeetCode-style coding problems}
+%         \resumeItem{Engineered a full-stack application using Express.js, React, Judge0, and MongoDB that generated personalized concept explanations via OpenAI's API and automatically validated code submissions in real-time}
+%         \resumeItem{Attracted 85 unique users who collectively generated 340+ practice questions and placed among top winners}      \resumeItemListEnd
 
     \resumeProjectHeading
       {\href{https://github.com/trentwiles/hackernews}{\textbf{HackerNews Clone}} $|$ \emph{Go, React, TypeScript, PostgreSQL, Docker}}{July 2025}
@@ -164,6 +189,14 @@
       \resumeItem{Implemented full voting and sorting systems, user customization features, and comprehensive HTTP/business logic logging to enable 2,000+ monthly active users}
       \resumeItem{Engineered a Go backend and React/TypeScript frontend using ShadCN components, achieving sub-100ms API response times and support for 500+ users in production}
       \resumeItemListEnd
+
+    \resumeProjectHeading
+  {\href{https://github.com/Camille-Ferrell/rag-project/tree/basic-rag}{\textbf{RAG Pipeline Metrics}} $|$ \emph{Python, gRPC, PostgreSQL, Clickhouse, Cassandra, OpenSearch}}{June 2025}
+  \resumeItemListStart
+  \resumeItem{Partnered with NetApp Instaclustr in a team of 8 during Northeastern's Software Engineering in Australia program to design a RAG pipeline using Mistral 7B that benchmarked query latency across four distributed database backends}
+  \resumeItem{Developed scalable FastAPI microservices for document ingestion and embedding generation, leveraging gRPC for modular inter-service communication in a fast-paced Agile environment}
+  \resumeItem{Optimized document processing pipeline using SPECTER2 embeddings to achieve 10,000 documents per hour throughput, demonstrating production-grade scalability for scientific PDF ingestion}
+  \resumeItemListEnd
 
       \resumeProjectHeading
  {\href{https://github.com/trentwiles/flag}{\textbf{Flag}} $|$ \emph{PHP, MySQL, Apache, Cloudflare}}{December 2020}
@@ -174,28 +207,15 @@
 
 \resumeSubHeadingListEnd
 
-%-----------EXPERIENCE-----------
-\section{Experience}
-\resumeSubHeadingListStart
-\resumeSubheading
- {Kaleidoscope at Khoury College}{September 2025 - Present}
- {Software Engineer}{}
-\resumeItemListStart
-\resumeItem{Collaborated with the software team to manage AWS resources for Northeastern Kaleidoscope, a club council overseeing 50+ student organizations funded by Khoury College}
-\resumeItem{Partnered with the operations team to automate Slack notifications integrated with Google Sheets, streamlining communication across 10,000+ dollars in annual club distributions}
-\resumeItemListEnd
-
- \vspace{0cm}
-
-\resumeSubheading
- {Guilford Racquet and Swim Club}{May 2021 -- August 2023}
- {Junior Tennis Pro}{}
-\resumeItemListStart
-\resumeItem{Delivered quality tennis coaching to children ages 4-15 and ran private lessons}
-\resumeItem{Addressed parent questions and concerns; tailored lessons to reflect conversations}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
+  \section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2.5pt]
+   \small{\item{
+\textbf{Languages}{: Java, Python, JavaScript, TypeScript, HTML/CSS, Go, C, Kotlin} \\
+\textbf{Frameworks}{: Node.js, Flask, ExpressJS, React, WSGI, JUnit, Jest, JQuery} \\
+\textbf{Databases}{: MySQL, PostgreSQL, SQLite, MongoDB, Redis} \\
+\textbf{Tools}{: Git, GitHub, Bash, Linux, Notion, LaTeX, Docker, DigitalOcean, Caddy, Apache2, Nginx}
+   }}
+\end{itemize}
 
 %--------Interests------------
 \section{Interests}
